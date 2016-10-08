@@ -2,9 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Strategic</title>
+    <base href="/">
+    <link rel="stylesheet" href="/modules/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
-  <body>
+  <body ng-app="strategic" ng-cloak>
+    <div ng-view></div>
 
+    <script src="/modules/angular/angular.min.js"></script>
+    <script src="/modules/angular-animate/angular-animate.min.js"></script>
+    <script src="/modules/angular-aria/angular-aria.min.js"></script>
+    <script src="/modules/angular-messages/angular-messages.min.js"></script>
+    <script src="/modules/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="/modules/angular-route/angular-route.min.js"></script>
+    <script src="/modules/angular-material/angular-material.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/controllers/ProjectListController.js"></script>
   </body>
 </html>
