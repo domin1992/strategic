@@ -1,0 +1,33 @@
+{
+  "name": "angular-strategic",
+  "version": "0.0.1",
+  "description": "Simple todo app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "todo",
+    "angular",
+    "angular-material"
+  ],
+  "author": "Dominik Nowak <kontakt@dominiknowak.xyz>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.17.0",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-aria": "^1.5.8",
+    "angular-material": "^1.1.1",
+    "angular-messages": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "angular-sanitize": "^1.5.8",
+    "express": "^4.14.0",
+    "node-env-file": "^0.1.8"
+  }
+}
