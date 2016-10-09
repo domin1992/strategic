@@ -7,9 +7,13 @@ strategic.config(function($routeProvider, $locationProvider, $mdThemingProvider)
       templateUrl: 'templates/project-list.html',
       controller: 'ProjectListController',
     })
+    .when('/project/:id', {
+      templateUrl: 'templates/project.html',
+      controller: 'ProjectController',
+    })
     .otherwise({redirectTo: '/'});
 
-  $locationProvider.html5Mode(true);
+  $locationProvider.html5Mode(false);
 
   // theme
   $mdThemingProvider.theme('default')

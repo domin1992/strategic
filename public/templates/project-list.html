@@ -1,1 +1,8 @@
-My amazing SPA!
+<md-card-title>
+  <md-card-title-text>
+    <span class="md-headline">Projects</span>
+  </md-card-title-text>
+</md-card-title>
+<md-list-item class="secondary-button-padding" ng-repeat="project in projects" ng-click="projectDetails(project.id)">
+  <p>{{project.name}}</p>
+</md-list-item>

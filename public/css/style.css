@@ -28,6 +28,10 @@
   font-feature-settings: 'liga';
 }
 
+body, md-content.md-default-theme, md-content{
+  background-color: #E8E8E8;
+}
+
 .preloader{
   display: block;
   position: fixed;

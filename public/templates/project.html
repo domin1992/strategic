@@ -1,0 +1,15 @@
+<md-card-title>
+  <md-card-title-text>
+    <span class="md-headline">{{project.name}}</span>
+  </md-card-title-text>
+</md-card-title>
+<md-card-content>
+  <p>
+    <strong>Time spent:</strong> {{project.time_spent}} h<br />
+    <strong>Deadline:</strong> {{project.deadline}}
+  </p>
+</md-card-content>
+<md-card-actions layout="row" layout-align="end center">
+  <md-button ng-click="back()">Back</md-button>
+  <md-button>Tasks</md-button>
+</md-card-actions>
