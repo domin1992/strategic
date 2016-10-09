@@ -1,6 +1,7 @@
 var strategic = angular.module('strategic', ['ngRoute', 'ngMaterial']);
 
-strategic.config(function($routeProvider, $locationProvider) {
+strategic.config(function($routeProvider, $locationProvider, $mdThemingProvider) {
+  // routes
   $routeProvider
     .when('/', {
       templateUrl: 'templates/project-list.html',
@@ -9,4 +10,9 @@ strategic.config(function($routeProvider, $locationProvider) {
     .otherwise({redirectTo: '/'});
 
   $locationProvider.html5Mode(true);
+
+  // theme
+  $mdThemingProvider.theme('default')
+    .primaryPalette('red')
+    .accentPalette('blue');
 });

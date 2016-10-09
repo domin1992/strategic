@@ -4,11 +4,63 @@
     <meta charset="utf-8">
     <title>Strategic</title>
     <base href="/">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
     <link rel="stylesheet" href="/modules/angular-material/angular-material.min.css">
     <link rel="stylesheet" href="/css/style.css">
   </head>
-  <body ng-app="strategic" ng-cloak>
-    <div ng-view></div>
+  <body ng-app="strategic" ng-cloak ng-controller="MainController">
+    <!-- preloader -->
+    <div class="preloader">
+      <div class="preloader-wrapper">
+        <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+      </div>
+    </div>
+    <md-content>
+      <!-- toolbar -->
+      <md-toolbar class="md-hue-2">
+        <div class="md-toolbar-tools">
+          <md-button class="md-icon-button" aria-label="Settings" ng-click="toggleLeft('left')">
+            <md-icon md-font-icon="material-icons">menu</md-icon>
+          </md-button>
+          <h2>
+            <span>Strategic</span>
+          </h2>
+          <span flex></span>
+          <md-button class="md-icon-button" aria-label="Favorite">
+            <md-icon md-font-icon="material-icons">favorite</md-icon>
+          </md-button>
+          <md-menu>
+            <md-button class="md-icon-button" aria-label="More" ng-click="openMenu($mdOpenMenu, $event)">
+              <md-icon md-font-icon="material-icons">more_vert</md-icon>
+            </md-button>
+            <md-menu-content width="4">
+              <md-menu-item>
+                <md-button>
+                  <md-icon md-font-icon="material-icons" md-menu-align-target>dialpad</md-icon>
+                  Example
+                </md-button>
+              </md-menu-item>
+            </md-menu-content>
+          </md-menu>
+        </div>
+      </md-toolbar>
+      <!-- main view -->
+      <div ng-view></div>
+    </md-content>
+    <!-- sidenav -->
+    <md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
+      <md-toolbar class="md-theme-indigo">
+        <h1 class="md-toolbar-tools">Disabled Backdrop</h1>
+      </md-toolbar>
+      <md-content layout-margin>
+        <p>
+          This sidenav is not showing any backdrop, where users can click on it, to close the sidenav.
+        </p>
+        <md-button ng-click="toggleLeft('left')" class="md-accent">
+          Close this Sidenav
+        </md-button>
+      </md-content>
+    </md-sidenav>
 
     <script src="/modules/angular/angular.min.js"></script>
     <script src="/modules/angular-animate/angular-animate.min.js"></script>
@@ -18,6 +70,7 @@
     <script src="/modules/angular-route/angular-route.min.js"></script>
     <script src="/modules/angular-material/angular-material.min.js"></script>
     <script src="/js/app.js"></script>
+    <script src="/js/controllers/MainController.js"></script>
     <script src="/js/controllers/ProjectListController.js"></script>
   </body>
 </html>
