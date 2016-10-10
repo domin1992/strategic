@@ -1,4 +1,4 @@
-var strategic = angular.module('strategic', ['ngRoute', 'ngMaterial']);
+var strategic = angular.module('strategic', ['ngRoute', 'ngMaterial', 'angularMoment']);
 
 strategic.config(function($routeProvider, $locationProvider, $mdThemingProvider) {
   // routes
@@ -19,4 +19,8 @@ strategic.config(function($routeProvider, $locationProvider, $mdThemingProvider)
   $mdThemingProvider.theme('default')
     .primaryPalette('red')
     .accentPalette('blue');
+});
+
+strategic.run(function(amMoment){
+  amMoment.changeLocale('pl');
 });

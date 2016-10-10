@@ -1,4 +1,4 @@
-strategic.controller('ProjectController', function($scope, $routeParams, $http, $location){
+strategic.controller('ProjectController', function($scope, $routeParams, $http, $location, moment, ProjectService){
   $http.get('/data/projects.json').success(function(response){
     var project;
     for(var i = 0; i < response.length; i++){
@@ -6,7 +6,7 @@ strategic.controller('ProjectController', function($scope, $routeParams, $http, 
         project = response[i];
       }
     }
-    $scope.project = project;
+    $scope.project = ProjectService.prepareDisplay(project);
   });
 
   $scope.back = function(){

@@ -5,11 +5,11 @@
 </md-card-title>
 <md-card-content>
   <p>
-    <strong>Time spent:</strong> {{project.time_spent}} h<br />
-    <strong>Deadline:</strong> {{project.deadline}}
+    <strong>Time spent:</strong> {{project.time_spent_display}} {{project.time_spent >= 3600 ? 'h' : project.time_spent >= 60 ? 'min' : 's'}}<br />
+    <strong>Deadline:</strong> {{project.deadline_display}}
   </p>
 </md-card-content>
 <md-card-actions layout="row" layout-align="end center">
   <md-button ng-click="back()">Back</md-button>
-  <md-button>Tasks</md-button>
+  <md-button ng-click="tasks()">Tasks</md-button>
 </md-card-actions>
