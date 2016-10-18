@@ -1,11 +1,11 @@
 [
-  {"id": 1, "name": "Task 1", "project_id": 1, "time_spent": 12345, "deadline": "2016-11-15"},
-  {"id": 2, "name": "Task 2", "project_id": 1, "time_spent": 12345, "deadline": "2016-11-15"},
-  {"id": 3, "name": "Task 3", "project_id": 1, "time_spent": 12345, "deadline": "2016-11-15"},
-  {"id": 4, "name": "Task 4", "project_id": 2, "time_spent": 12345, "deadline": "2016-11-15"},
-  {"id": 5, "name": "Task 5", "project_id": 2, "time_spent": 12345, "deadline": "2016-11-15"},
-  {"id": 6, "name": "Task 6", "project_id": 3, "time_spent": 12345, "deadline": "2016-11-15"},
-  {"id": 7, "name": "Task 7", "project_id": 4, "time_spent": 12345, "deadline": "2016-11-15"},
-  {"id": 8, "name": "Task 8", "project_id": 4, "time_spent": 12345, "deadline": "2016-11-15"},
-  {"id": 9, "name": "Task 9", "project_id": 4, "time_spent": 12345, "deadline": "2016-11-15"}
+  {"id": 1, "name": "Task 1", "project_id": 1, "time_spent": 12600},
+  {"id": 2, "name": "Task 2", "project_id": 1, "time_spent": 12600},
+  {"id": 3, "name": "Task 3", "project_id": 1, "time_spent": 12600},
+  {"id": 4, "name": "Task 4", "project_id": 2, "time_spent": 12600},
+  {"id": 5, "name": "Task 5", "project_id": 2, "time_spent": 12600},
+  {"id": 6, "name": "Task 6", "project_id": 3, "time_spent": 12600},
+  {"id": 7, "name": "Task 7", "project_id": 4, "time_spent": 12600},
+  {"id": 8, "name": "Task 8", "project_id": 4, "time_spent": 12600},
+  {"id": 9, "name": "Task 9", "project_id": 4, "time_spent": 12600}
 ]

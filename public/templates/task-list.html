@@ -4,7 +4,7 @@
   </md-card-title-text>
 </md-card-title>
 <md-list-item class="secondary-button-padding" ng-repeat="task in tasks">
-  <p>{{task.name}} <small>{{task.time_spent_display}}</small></p>
+  <p><strong>{{task.name}}</strong> <small>{{task.time_spent_display}}</small></p>
   <md-switch class="md-secondary" ng-model="task.running" ng-change="runTask(task.id)" ng-value="false"></md-switch>
 </md-list-item>
 <md-card-actions layout="row" layout-align="end center">

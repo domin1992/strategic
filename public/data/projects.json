@@ -1,6 +1,6 @@
 [
-  {"id": 1, "name": "Project 1", "time_spent": 12345, "deadline": "2016-11-15"},
-  {"id": 2, "name": "Project 2", "time_spent": 12345, "deadline": "2016-11-15"},
-  {"id": 3, "name": "Project 3", "time_spent": 12345, "deadline": "2016-11-15"},
-  {"id": 4, "name": "Project 4", "time_spent": 12345, "deadline": "2016-11-15"}
+  {"id": 1, "name": "Project 1", "deadline": "2016-11-15"},
+  {"id": 2, "name": "Project 2", "deadline": "2016-11-15"},
+  {"id": 3, "name": "Project 3", "deadline": "2016-11-15"},
+  {"id": 4, "name": "Project 4", "deadline": "2016-11-15"}
 ]
