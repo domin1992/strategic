@@ -53,17 +53,3 @@ strategic.controller('TaskListController', function($scope, $routeParams, $http,
     $scope.tasks[index].time_spent_display = TaskService.updateTimeSpentDisplay($scope.tasks[index].time_spent);
   }
 });
-
-strategic.directive('dynamicModel', ['$compile', '$parse', function($compile, $parse){
-  return {
-    restrict: 'A',
-    terminal: true,
-    priority: 100000,
-    link: function (scope, elem) {
-      var name = $parse(elem.attr('dynamic-model'))(scope);
-      elem.removeAttr('dynamic-model');
-      elem.attr('ng-model', name);
-      $compile(elem)(scope);
-    }
-  };
-}]);
