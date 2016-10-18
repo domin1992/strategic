@@ -12,4 +12,8 @@ strategic.controller('ProjectController', function($scope, $routeParams, $http, 
   $scope.back = function(){
     $location.path('/');
   }
+
+  $scope.tasks = function(){
+    $location.path('/tasks/' + $routeParams.id);
+  }
 });

@@ -11,6 +11,10 @@ strategic.config(function($routeProvider, $locationProvider, $mdThemingProvider)
       templateUrl: 'templates/project.html',
       controller: 'ProjectController',
     })
+    .when('/tasks/:id', {
+      templateUrl: 'templates/task-list.html',
+      controller: 'TaskListController',
+    })
     .otherwise({redirectTo: '/'});
 
   $locationProvider.html5Mode(false);
